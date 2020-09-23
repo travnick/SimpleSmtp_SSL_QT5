@@ -1,10 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
-#include "smtp.h"
-#include <QtWidgets/QMessageBox>
 #include <QFileDialog>
+#include <QMainWindow>
+#include <QtWidgets/QMessageBox>
 
 namespace Ui {
 class MainWindow;

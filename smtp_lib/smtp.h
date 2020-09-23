@@ -12,23 +12,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #ifndef SMTP_H
 #define SMTP_H
 
-
-#include <QtNetwork/QAbstractSocket>
-#include <QtNetwork/QSslSocket>
-#include <QString>
-#include <QTextStream>
-#include <QDebug>
-#include <QtWidgets/QMessageBox>
 #include <QByteArray>
+#include <QDebug>
 #include <QFile>
 #include <QFileInfo>
-
-
+#include <QString>
+#include <QTextStream>
+#include <QtNetwork/QAbstractSocket>
+#include <QtNetwork/QSslSocket>
+#include <QtWidgets/QMessageBox>
 
 class Smtp : public QObject
 {
     Q_OBJECT
-
 
 public:
     Smtp( const QString &user, const QString &pass,
@@ -63,6 +59,5 @@ private:
     int port;
     enum states{Tls, HandShake ,Auth,User,Pass,Rcpt,Mail,Data,Init,Body,Quit,Close};
     int state;
-
 };
 #endif

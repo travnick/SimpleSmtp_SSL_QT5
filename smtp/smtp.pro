@@ -11,12 +11,11 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = smtp
 TEMPLATE = app
 
-
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    smtp.cpp
+    mainwindow.cpp \
+    ../smtp_lib/smtp.cpp
 
-HEADERS  += mainwindow.h \
-    smtp.h
+HEADERS += mainwindow.h \
+    ../smtp_lib/smtp.h
 
-FORMS    += mainwindow.ui
+FORMS   += mainwindow.ui

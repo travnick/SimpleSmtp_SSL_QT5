@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "smtp.h"
 #include <QtWidgets/QMessageBox>
 
 namespace Ui {
